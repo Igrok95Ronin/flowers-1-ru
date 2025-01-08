@@ -1,0 +1,149 @@
+.order {
+  margin-top: 50px;
+}
+.order__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.order__left {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.order__wrapper {
+  border: 2px solid #000;
+  border-radius: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  background-color: #81d4af;
+}
+.order__imgWrp {
+  max-width: 280px;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+}
+.order__img {
+  width: 100%;
+  height: 100%;
+}
+.order__inner {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  padding: 0 10px;
+  justify-content: space-evenly;
+}
+.order__rozeCount {
+  font-weight: 700;
+  font-size: 18px;
+}
+.order__grade {
+  font-size: 12px;
+  margin-bottom: 20px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/stars.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 20px;
+    bottom: 0;
+    left: 50px;
+    transform: translate(-60%, 120%);
+  }
+}
+.er__price {
+  font-weight: 700;
+  font-size: 18px;
+}
+.order__btnWrp {
+  margin-bottom: 10px;
+}
+.order__btn {
+  background-color: #46343f;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 10px;
+  padding-left: 50px;
+  transition: 0.3s;
+  span {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/iconzakaz.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      left: -45px;
+      top: 55%;
+      transform: translateY(-50%);
+    }
+  }
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+.order__right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.order__imgWrpMain {
+  max-width: 100%;
+  max-height: 100%;
+}
+.order__imgMain {
+  width: 100%;
+  height: 100%;
+}
+.order__title {
+  @include h2Title;
+}
+.order__txt {
+  line-height: 20px;
+  padding: 0 10px;
+}
+.order__btnWrpWhatsApp {
+  padding: 0 10px;
+}
+.order__btnWhatsApp {
+  background-color: var(--mainColor);
+  color: #fff;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 20px;
+  padding-left: 50px;
+  transition: 0.3s;
+  span {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/whatsupp.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      left: -40px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &:hover {
+    color: #fff;
+    background-color: #157a4d;
+  }
+}
