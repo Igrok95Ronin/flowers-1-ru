@@ -1,0 +1,141 @@
+.comments {
+  margin-top: 50px;
+}
+.comments__box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.comments__left {
+}
+.comments__imgWrp {
+  max-width: 100%;
+  max-height: 100%;
+}
+.comments__img {
+  width: 100%;
+  height: 100%;
+}
+.comments__inner {
+  background-color: #81d4af;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 30px 10px 10px;
+}
+.comments__orders {
+  //   outline: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/stars.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 50px;
+    top: -23px;
+  }
+}
+.comments__order {
+  font-weight: 700;
+}
+.comments__yandex {
+  font-weight: 700;
+  span {
+    color: red;
+  }
+}
+.comments__prices {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.comments__price {
+  font-weight: 700;
+  font-size: 14px;
+  span {
+    font-size: 16px;
+  }
+}
+.comments__btn {
+  background-color: #46343f;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 25px;
+  padding-left: 45px;
+  transition: 0.3s;
+  span {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/iconzakaz.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 25px;
+      height: 25px;
+      left: -40px;
+      top: 55%;
+      transform: translateY(-50%);
+    }
+  }
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+.comments__right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 10px;
+}
+.comments__imgComWrp {
+  max-width: 100%;
+  max-height: 100%;
+}
+.comments__imgCom {
+  width: 100%;
+  height: 100%;
+}
+.comments__btnWrp {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.comments__btnTel {
+  @include btn;
+}
+.comments__btnInst {
+  @include btn;
+  background-color: #b653c0;
+  border: none;
+  color: #fff;
+  span {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../img/icon2.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      left: -40px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  &:hover {
+    background-color: #883991;
+    color: #fff;
+  }
+}
