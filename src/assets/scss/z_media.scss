@@ -1,11 +1,49 @@
-@media(max-width: 500px) {
-    .btnFixedD {
-        display: none;
-    }
-    .btnFixed {
-        display: block;
-    }
-    footer {
-        margin-bottom: 60px;
-    }
+@media (max-width: 1023px) {
+  .comments__btnTel,
+  .comments__btnInst {
+    font-size: 16px;
+  }
+  .comments__btnTel {
+    padding: 10px 10px 10px 40px;
+  }
+}
+@media (max-width: 767px) {
+  .header__box {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .header__ul {
+    padding-left: 60px;
+  }
+  .order__box,
+  .comments__box,
+  .florists__wrapper {
+    grid-template-columns: 1fr;
+  }
+  .comments__btnTel span::before {
+    width: 25px;
+    height: 25px;
+    left: -33px;
+  }
+}
+
+@media (max-width: 500px) {
+  .btnFixedD {
+    display: none;
+  }
+  .btnFixed {
+    display: block;
+  }
+  footer {
+    margin-bottom: 60px;
+  }
+  .florists__imgWrp {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 424px) {
+  .florists__imgWrp {
+    max-width: 170px;
+  }
 }
